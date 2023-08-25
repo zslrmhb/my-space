@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navbar from "./Navbar";
+import Sidebar from "./Sidebar";
 import { useRouter } from "next/router";
 
 export default function ContainerBlock({ children, ...customMeta }) {
@@ -14,7 +15,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
   };
 
   return (
-    <div>
+    <div className="w-screen h-screen">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -36,10 +37,13 @@ export default function ContainerBlock({ children, ...customMeta }) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <main>
+
+      <main className="flex flex-col h-full p-9">
         <Navbar />
-        <div>{children}</div>
-        {/* <Footer /> */}
+        <div className="flex flex-row h-full">
+          <Sidebar />
+          <div className="w-4/5 flex h-full">{children}</div>
+        </div>
       </main>
     </div>
   );

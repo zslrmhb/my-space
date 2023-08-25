@@ -1,26 +1,29 @@
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+
 export default function Navbar() {
   const router = useRouter();
 
   return (
+    <div className="flex justify-center space-x-12">
+      <NavLink href="/about" chineseLabel={"我"} englishLabel={"ABOUT"} />
+      <NavLink href="/skills" chineseLabel={"術"} englishLabel={"SKILLS"} />
+      <NavLink
+        href="/projects"
+        chineseLabel={"作"}
+        englishLabel={"PROJECTS"}
+      />
+    </div>
+  );
+}
+
+function NavLink({ href, chineseLabel, englishLabel }) {
+  return (
     <>
-      <nav className="flex md:flex-row justify-between items-center">
-        <Link href="/about">
-          我 <br /> About
-        </Link>
-        <Link href="/skills">
-          {" "}
-          術 <br />
-          Skills
-        </Link>
-        <Link href="projects">
-          {" "}
-          作 <br />
-          Projects
-        </Link>
-      </nav>
+      <Link className="px-8" href={href}>
+        <div className="text-xl text-center"> {chineseLabel} </div>
+        <div className="text-center"> {englishLabel} </div>
+      </Link>
     </>
   );
 }
