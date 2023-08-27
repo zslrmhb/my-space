@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
+import Scene from "./Scene";
 import { useRouter } from "next/router";
 
 export default function ContainerBlock({ children, ...customMeta }) {
@@ -38,11 +39,14 @@ export default function ContainerBlock({ children, ...customMeta }) {
         )}
       </Head>
 
-      <main className="flex flex-col h-full p-9">
+      <main className="relative flex flex-col h-full p-9">
+        <Scene />
         <Navbar />
-        <div className="flex flex-row h-full">
+
+        <div className="relative flex flex-row h-full z-10">
           <Sidebar />
-          <div className="w-4/5 flex h-full">{children}</div>
+
+          <div className=" w-4/6 flex h-full">{children}</div>
         </div>
       </main>
     </div>

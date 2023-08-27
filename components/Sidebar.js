@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Sidebar() {
   return (
     // w-1/5 flex flex-col items-center
-    <div className="flex flex-col items-center w-1/5">
+    <div className="flex flex-col items-center justify-center w-1/6">
       {/* <Image
         src={profilePic}
         alt="profile image"
@@ -22,11 +22,11 @@ export default function Sidebar() {
           {myInfo.nameEN[0]} {myInfo.nameEN[1]}
         </h2>
       </Link> */}
-      <a href={myInfo.github}>
+      <a className="" href={myInfo.github}>
         <Image src={githubPic} alt="GitHub" width={80} />
       </a>
       <a href={myInfo.linkedin}>
-        <Image src={linkedinPic} alt="GitHub" width={80} />
+        <Image src={linkedinPic} alt="Linkedin" width={80} />
       </a>
     </div>
   );
