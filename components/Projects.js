@@ -26,7 +26,7 @@ export default function Projects() {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-9">
+      <div className="grid grid-cols-1 gap-8 p-9">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -37,10 +37,14 @@ export default function Projects() {
         ))}
       </div>
       {selectedProject && (
-        <ProjectDetails
-          project={selectedProject}
-          onClose={closeProjectDetails}
-        />
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white rounded-lg w-1/2 h-1/2">
+            <ProjectDetails
+              project={selectedProject}
+              onClose={closeProjectDetails}
+            />
+          </div>
+        </div>
       )}
     </>
   );
