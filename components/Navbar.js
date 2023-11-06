@@ -11,7 +11,7 @@ export default function Navbar() {
         <div className="flex  md:flex-row justify-between items-center">
           <div className="flex flex-col ">
             <Link href="/">
-              <h1 className="font-semibold text-xl hover:text-2xl">
+              <h1 className="font-semibold text-xl">
                 {myInfo.nameCN[0]} &ensp; {myInfo.nameCN[1]}
               </h1>
               <p className="text-base font-light text-gray-500">

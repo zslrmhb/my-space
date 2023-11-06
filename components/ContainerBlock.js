@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import Scene from "./Scene";
 import Footer from "./Footer";
+import profilePic from "public/assets/images/profile.png";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
@@ -9,9 +10,9 @@ export default function ContainerBlock({ children, ...customMeta }) {
   const router = useRouter();
 
   const meta = {
-    title: "Hongbin Miao's - Stduent",
+    title: "Hongbin Miao's Space",
     description: "Hongbin's Website",
-    image: "",
+    image: profilePic,
     type: "website",
     ...customMeta,
   };
@@ -39,7 +40,6 @@ export default function ContainerBlock({ children, ...customMeta }) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      
 
       {/* <main className="relative  flex flex-col p-9 w-screen h-screen"></main> */}
       <main className="w-full">
