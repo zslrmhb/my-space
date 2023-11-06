@@ -39,18 +39,14 @@ export default function ContainerBlock({ children, ...customMeta }) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
+      
 
       {/* <main className="relative  flex flex-col p-9 w-screen h-screen"></main> */}
-      <main className="w-screen">
+      <main className="w-full">
         <Navbar />
         {/* <Scene /> */}
-
-        {/* <div className="relative flex flex-row h-full z-10"> */}
-        {/* <Sidebar /> */}
-
         <div>{children}</div>
         <Footer />
-        {/* </div> */}
       </main>
     </div>
   );

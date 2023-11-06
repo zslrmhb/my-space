@@ -12,6 +12,7 @@ const myInfo = {
   email: "zslrmhb@gmail.com",
   linkedin: "https://www.linkedin.com/in/hongbinmiao/",
   linkedinPic: linkedinPic,
+  about: {title: "I'm a 4th year undergraduate student at UC San Diego", description: "I love learning new tools/skills!!!"},
   colorPalette: {
     blue: "#1685a9",
     green: "#16a951",

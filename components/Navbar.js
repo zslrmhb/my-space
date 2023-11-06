@@ -9,9 +9,9 @@ export default function Navbar() {
     <>
       <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
         <div className="flex  md:flex-row justify-between items-center">
-          <div className="flex flex-col">
+          <div className="flex flex-col ">
             <Link href="/">
-              <h1 className="font-semibold text-xl">
+              <h1 className="font-semibold text-xl hover:text-2xl">
                 {myInfo.nameCN[0]} &ensp; {myInfo.nameCN[1]}
               </h1>
               <p className="text-base font-light text-gray-500">
@@ -23,30 +23,30 @@ export default function Navbar() {
           <div className="space-x-8 hidden md:block">
             <Link
               href="/about"
-              className={`text-base  ${
+              className={`text-l hover:text-xl ${
                 router.asPath === "/about"
-                  ? "text-gray-800 font-bold "
+                  ? "text-gray-800 font-bold text-xl"
                   : "text-gray-600 font-normal "
               }`}>
-              ABOUT{" "}
+              我 ABOUT{" "}
             </Link>
             <Link
               href="/skills"
-              className={`text-base  ${
+              className={`text-l hover:text-xl ${
                 router.asPath === "/skills"
-                  ? "text-gray-800 font-bold "
+                  ? "text-gray-800 font-bold text-xl"
                   : "text-gray-600 font-normal "
               }`}>
-              SKILLS{" "}
+              術 SKILLS{" "}
             </Link>
             <Link
               href="/projects"
-              className={`text-base  ${
+              className={`text-l hover:text-xl ${
                 router.asPath === "/projects"
-                  ? "text-gray-800 font-bold "
+                  ? "text-gray-800 font-bold text-xl"
                   : "text-gray-600 font-normal "
               }`}>
-              PROJECTS{" "}
+              作 PROJECTS{" "}
             </Link>
           </div>
           <div className="space-x-4 flex flex-row items-center">

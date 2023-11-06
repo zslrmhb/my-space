@@ -13,21 +13,11 @@ export default function Hero() {
       </div>
 
       {/* Image Container */}
-      <div className="hidden lg:block  relative  w-full md:w-1/2 -mr-40 mt-20">
-        <div className="w-3/4 ">
-          <Image src={myInfo.profilePic} alt="avatar" className="" />
+      <div className="hidden lg:block relative  w-full md:w-1/2 -mr-40 mt-20">
+        <div className="3/4">
+          <Image src={myInfo.profilePic} alt="avatar" height={300} />
         </div>
       </div>
     </div>
   );
-  //   <div className="absolute top-10">
-  //     <h1 className="text-8xl">光臨</h1>
-  //     <h2 className="text-6xl">
-  //       <strong>WELCOME</strong> TO MY SPACE
-  //     </h2>
-  //     <div className="">
-  //       <Image src={myInfo.profilePic} alt="avatar" className="" />
-  //     </div>
-  //   </div>
-  // );
 }
