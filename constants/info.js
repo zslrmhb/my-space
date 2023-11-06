@@ -1,9 +1,17 @@
+import githubPic from "public/assets/images/icons8-github.svg";
+import linkedinPic from "public/assets/images/icons8-linkedin.svg";
+import profilePic from "public/assets/images/profile.png";
+
 const myInfo = {
+  profilePic: profilePic,
+  githubUsername: "zslrmhb",
   github: "https://github.com/zslrmhb",
+  githubPic: githubPic,
   nameCN: ["繆", "鴻彬"],
-  nameEN: ["Miao", "Hongbin"],
+  nameEN: ["Miao Hongbin"],
   email: "zslrmhb@gmail.com",
   linkedin: "https://www.linkedin.com/in/hongbinmiao/",
+  linkedinPic: linkedinPic,
   colorPalette: {
     blue: "#1685a9",
     green: "#16a951",
@@ -11,6 +19,43 @@ const myInfo = {
     yellow: "#ffc64b",
     white: "#fffbf0",
   },
+  projects: [
+    {
+      name: "i-Note-It",
+      thumbnail: "/../public/assets/images/i-note-it.png",
+      description: "d",
+    },
+    {
+      name: "Kun Analyzer",
+      thumbnail: "/../public/assets/images/i-note-it.png",
+      description: "d",
+    },
+    {
+      name: "TRCV_2023",
+      thumbnail: "/../public/assets/images/i-note-it.png",
+      description: "d",
+    },
+    {
+      name: "Omniverse Virtual Assistant",
+      thumbnail: "/../public/assets/images/i-note-it.png",
+      description: "d",
+    },
+    {
+      name: "Kun Classfier",
+      thumbnail: "/../public/assets/images/i-note-it.png",
+      description: "d",
+    },
+    {
+      name: "Fake News Detection",
+      thumbnail: "/../public/assets/images/i-note-it.png",
+      description: "d",
+    },
+    {
+      name: "Beer Rating Prediction",
+      thumbnail: "/../public/assets/images/i-note-it.png",
+      description: "d",
+    },
+  ],
   skillNodes: [
     {
       name: "Languages",

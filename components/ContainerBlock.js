@@ -1,14 +1,15 @@
-import Head from "next/head";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import Scene from "./Scene";
+import Footer from "./Footer";
+import Head from "next/head";
 import { useRouter } from "next/router";
 
 export default function ContainerBlock({ children, ...customMeta }) {
   const router = useRouter();
 
   const meta = {
-    title: "Hongbin's Personal Space",
+    title: "Hongbin Miao's - Stduent",
     description: "Hongbin's Website",
     image: "",
     type: "website",
@@ -16,7 +17,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
   };
 
   return (
-    <div className="w-screen h-screen">
+    <div className>
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -39,15 +40,17 @@ export default function ContainerBlock({ children, ...customMeta }) {
         )}
       </Head>
 
-      <main className="relative flex flex-col h-full p-9">
-        <Scene />
+      {/* <main className="relative  flex flex-col p-9 w-screen h-screen"></main> */}
+      <main className="w-screen">
         <Navbar />
+        {/* <Scene /> */}
 
-        <div className="relative flex flex-row h-full z-10">
-          <Sidebar />
+        {/* <div className="relative flex flex-row h-full z-10"> */}
+        {/* <Sidebar /> */}
 
-          <div className=" w-4/6 flex h-full">{children}</div>
-        </div>
+        <div>{children}</div>
+        <Footer />
+        {/* </div> */}
       </main>
     </div>
   );

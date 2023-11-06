@@ -1,4 +1,4 @@
-import ReactECharts from "echarts-for-react";
+import dynamic from "next/dynamic";
 import myInfo from "../constants/info";
 
 const topLevelCategoryColors = {
@@ -29,6 +29,9 @@ function getLevelOption() {
     },
   ];
 }
+const ReactECharts = dynamic(() => import("echarts-for-react"), {
+  ssr: false, // Disable server-side rendering for this component
+});
 
 export default function SkillGraphECharts({ childDimensions }) {
   const nodesData = myInfo.skillNodes;
