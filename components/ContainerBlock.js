@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import Scene from "./Scene";
 import Footer from "./Footer";
-import profilePic from "public/assets/images/profile.png";
+import profilePic from "public/profile.png";
 import Head from "next/head";
 import { useRouter } from "next/router";
 

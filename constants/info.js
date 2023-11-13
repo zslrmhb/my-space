@@ -1,6 +1,6 @@
-import githubPic from "public/assets/images/icons8-github.svg";
-import linkedinPic from "public/assets/images/icons8-linkedin.svg";
-import profilePic from "public/assets/images/profile.png";
+import githubPic from "public/icons8-github.svg";
+import linkedinPic from "public/icons8-linkedin.svg";
+import profilePic from "public/profile.png";
 
 const myInfo = {
   profilePic: profilePic,
@@ -12,7 +12,10 @@ const myInfo = {
   email: "zslrmhb@gmail.com",
   linkedin: "https://www.linkedin.com/in/hongbinmiao/",
   linkedinPic: linkedinPic,
-  about: {title: "I'm a 4th year undergraduate student at UC San Diego", description: "I love learning new tools/skills!!!"},
+  about: {
+    title: "I'm a 4th year undergraduate student at UC San Diego",
+    description: "I love learning new tools/skills!!!",
+  },
   colorPalette: {
     blue: "#1685a9",
     green: "#16a951",
@@ -22,39 +25,41 @@ const myInfo = {
   },
   projects: [
     {
-      name: "i-Note-It",
-      thumbnail: "/../public/assets/images/i-note-it.png",
-      description: "d",
+      title: "3D Virtual Assistant",
+      thumbnail:
+        "https://camo.githubusercontent.com/42f540f894c80b45b7d359ea5dacc8119cfe994c4024b551e5ff0a3598dea3af/687474703a2f2f696d672e796f75747562652e636f6d2f76692f6b7639514d2d534f44494d2f6d617872657364656661756c742e6a7067",
+      link: "https://github.com/zslrmhb/Omniverse-Virtual-Assisstant",
+    },
+
+    {
+      title: "i-Note-It",
+      thumbnail:
+        "https://github.com/zslrmhb/i-Note-It/raw/main/assets/logo.png",
+      link: "https://github.com/zslrmhb/i-Note-It",
     },
     {
-      name: "Kun Analyzer",
-      thumbnail: "/../public/assets/images/i-note-it.png",
-      description: "d",
+      title: "TR_CV_2023",
+      thumbnail:
+        "https://tritonrobotics.ucsd.edu/wp-content/uploads/2023/10/inf-min-1-2048x1365.jpeg",
+      link: "https://github.com/zslrmhb/TRCV_2023",
     },
     {
-      name: "TRCV_2023",
-      thumbnail: "/../public/assets/images/i-note-it.png",
-      description: "d",
+      title: "Kun Classfier",
+      thumbnail:
+        "https://github.com/zslrmhb/Kun_Classifier/raw/main/Assets/kun.jpg",
+      link: "https://github.com/zslrmhb/Kun_Classifier",
     },
     {
-      name: "Omniverse Virtual Assistant",
-      thumbnail: "/../public/assets/images/i-note-it.png",
-      description: "d",
+      title: "Kun Scraper",
+      thumbnail:
+        "https://github.com/zslrmhb/Kun_Classifier/raw/main/Assets/zhiyin.jpg",
+      link: "https://github.com/zslrmhb/Kun_Scraper",
     },
     {
-      name: "Kun Classfier",
-      thumbnail: "/../public/assets/images/i-note-it.png",
-      description: "d",
-    },
-    {
-      name: "Fake News Detection",
-      thumbnail: "/../public/assets/images/i-note-it.png",
-      description: "d",
-    },
-    {
-      name: "Beer Rating Prediction",
-      thumbnail: "/../public/assets/images/i-note-it.png",
-      description: "d",
+      title: "ROS Tutorial",
+      thumbnail:
+        "https://tritonrobotics.ucsd.edu/wp-content/uploads/2023/10/Screenshot-2023-10-07-at-11.19.50-AM-2048x1351.png",
+      link: "https://github.com/zslrmhb/ROS_Tutorial",
     },
   ],
   skillNodes: [
