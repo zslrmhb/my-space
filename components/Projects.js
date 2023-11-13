@@ -1,5 +1,6 @@
 import myInfo from "constants/info";
 import { useState } from "react";
+import Image from "next/image";
 // import ProjectCard from "./ProjectCard";
 // import ProjectDetails from "./ProjectDetails";
 
@@ -22,6 +23,7 @@ export default function Projects() {
                 link={proj.link}
                 thumbnail={proj.thumbnail}
                 number={`${idx + 1}`}
+                key={proj.id}
               />
             ))}
           </div>
@@ -68,9 +70,11 @@ const ProjectCard = ({ title, link, thumbnail, number }) => {
     <a href={link} className="w-full block shadow-2xl">
       <div className="relative overflow-hidden">
         <div className="h-48 object-cover">
-          <img
+          <Image
             src={thumbnail}
             alt="portfolio"
+            width={100}
+            height={100}
             className="transform hover:scale-150 transition duration-2000 ease-linear object-cover h-full w-full"
           />
           <h1 className="absolute top-0 text-gray-50 font-bold text-base bg-red-500 rounded px-2">

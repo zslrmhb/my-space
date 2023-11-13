@@ -40,7 +40,7 @@ const myInfo = {
     {
       title: "TR_CV_2023",
       thumbnail:
-        "https://tritonrobotics.ucsd.edu/wp-content/uploads/2023/10/inf-min-1-2048x1365.jpeg",
+        "/TR_CV.jpeg",
       link: "https://github.com/zslrmhb/TRCV_2023",
     },
     {
@@ -58,7 +58,7 @@ const myInfo = {
     {
       title: "ROS Tutorial",
       thumbnail:
-        "https://tritonrobotics.ucsd.edu/wp-content/uploads/2023/10/Screenshot-2023-10-07-at-11.19.50-AM-2048x1351.png",
+        "/ROS.jpeg",
       link: "https://github.com/zslrmhb/ROS_Tutorial",
     },
   ],
